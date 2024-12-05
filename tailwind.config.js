@@ -7,9 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        media1: "url('/img/image.jpg')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      maxWidth: {
+        siteWidth: "1400px",
+      },
+      fontSize: {
+        32: "2rem",
+      },
+      colors: {
+        primary: "var(--logo-color)",
+        overlay: "var(--overlay)",
       },
     },
   },

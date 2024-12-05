@@ -1,21 +1,59 @@
+@font-face {
+  font-family: "FS Joey Regular";
+  font-weight: 400;
+  src: url("./fonts/regular/FSJoeyWeb-Regular.woff2") format("woff2"),
+    url("./fonts/regular/FSJoeyWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FS Joey Light";
+  font-weight: 300;
+  src: url("./fonts/light/FSJoeyWeb-Light.woff2") format("woff2"),
+    url("./fonts/light/FSJoeyWeb-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FS Joey Medium";
+  font-weight: 600;
+  src: url("./fonts/medium/FSJoeyWeb-Medium.woff2") format("woff2"),
+    url("./fonts/medium/FSJoeyWeb-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FS Joey Bold";
+  font-weight: 700;
+  src: url("./fonts/bold/FSJoeyWeb-Bold.woff2") format("woff2"),
+    url("./fonts/bold/FSJoeyWeb-Bold.woff") format("woff");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --logo-color: #1a482b;
+  --overlay: #f5f6f8;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "FS Joey Regular" sans-serif;
+  color: #3a3a3a;
+}
+
+.holder {
+  @apply mx-auto max-w-siteWidth px-6 md:px-12;
+}
+
+.btn {
+  @apply absolute bottom-5;
+}
+
+@layer base {
+  p {
+    @apply font-light;
+  }
+}
+
+.before-shadow::before {
+  @apply absolute bg-overlay content-[""] h-[97%] w-[80%] -left-12 -bottom-12 -z-10;
 }
