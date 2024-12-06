@@ -44,8 +44,18 @@ body {
   @apply mx-auto max-w-siteWidth px-6 md:px-12;
 }
 
-.btn {
-  @apply absolute bottom-5;
+.read-more-btn {
+  cursor: pointer;
+  font-size: 0.9375rem;
+  padding-top: 1.25rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  transform: translateZ(0);
+  transition: color 0.5s, transform 0.5s, 0.5s;
+}
+.read-more-btn:hover {
+  color: #5b7c2a;
+  transform: translateZ(0) translateX(0.3em);
 }
 
 @layer base {
