@@ -17,7 +17,7 @@ export default function TextMedia() {
                 height={1296}
               />
             </div>
-            <div className="space-y-4 [&>p]:text-lg [&>p]:lg:text-xl [&>p]:leading-relaxed">
+            <div className="space-y-4 [&>p]:text-lg [&>p]:lg:text-xl [&>p]:leading-relaxed pt-8">
               <h2 className="text-4xl font-light">
                 We are nothing if not our people and their talent
               </h2>

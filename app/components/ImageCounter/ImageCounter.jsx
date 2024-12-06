@@ -17,11 +17,11 @@ export default function ImageCounter() {
                 height={1296}
               />
             </div>
-            <div className="space-y-10">
+            <div className="space-y-10 pt-8">
               <h2 className="text-4xl font-FS font-light">
                 Independence adds value
               </h2>
-              <ul className="grid grid-cols-3 gap-[25px 0]">
+              <ul className="grid sm:grid-cols-2 md:grid-cols-3 items-center space-y-6 mdd:space-y-0 gap-[25px 0]">
                 <li className="flex flex-col justify-between [&>p]:text-base [&>p]:leading-[130%] [&>p]:tracking-wide space-y-2">
                   <p>Investment Banking</p>
                   <h3 className="text-4xl text-greenlight font-light">c.750</h3>

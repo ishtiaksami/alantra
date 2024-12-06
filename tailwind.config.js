@@ -25,6 +25,7 @@ module.exports = {
       },
       colors: {
         logo: "var(--logo-color)",
+        border: "#e8e8e8",
         overlay: "var(--overlay)",
         content: "var(--content)",
         primary: "var(--primary)",
