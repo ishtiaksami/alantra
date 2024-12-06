@@ -37,7 +37,7 @@ export default function Header() {
               {/* Mega Menu */}
               <div
                 id="megaMenu"
-                className={`absolute left-0 mt-4 w-screen bg-white text-primary shadow-lg rounded-lg overflow-hidden transition-all duration-300 ${
+                className={`absolute left-0 mt-4 w-screen bg-white text-logo shadow-lg rounded-lg overflow-hidden transition-all duration-300 ${
                   isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
@@ -105,7 +105,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <h1 className="text-32 text-primary font-normal tracking-widest uppercase">
+            <h1 className="text-32 text-logo font-normal tracking-widest uppercase">
               <Link href="/">Alantra</Link>
             </h1>
           </div>

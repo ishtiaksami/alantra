@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function TextMedia() {
+export default function ImageCounter() {
   return (
     <>
       <section className="py-8 md:py-16">
@@ -10,29 +10,44 @@ export default function TextMedia() {
           <div className="grid lg:grid-cols-2 items-center gap-10">
             <div className="relative w-full before-shadow">
               <Image
-                src="/img/featured-UK-1.jpg"
+                src="/img/Lobby.png"
                 alt="alantra"
                 className="size-full"
                 width={1191}
                 height={1296}
               />
             </div>
-            <div className="space-y-4 [&>p]:text-lg [&>p]:lg:text-xl [&>p]:leading-relaxed">
-              <h2 className="text-4xl font-light">
-                We are nothing if not our people and their talent
+            <div className="space-y-10">
+              <h2 className="text-4xl font-FS font-light">
+                Independence adds value
               </h2>
-              <p>
-                We are committed to providing opportunities to our professionals
-                to realize their full potential within Alantra. We are looking
-                for people who want to live by our long-term endeavor to build a
-                financial services business which lives beyond their personal
-                ambitions, well into the future. And we want people who make
-                things happen.
-              </p>
+              <ul className="grid grid-cols-3 gap-[25px 0]">
+                <li className="flex flex-col justify-between [&>p]:text-base [&>p]:leading-[130%] [&>p]:tracking-wide space-y-2">
+                  <p>Investment Banking</p>
+                  <h3 className="text-4xl text-greenlight font-light">c.750</h3>
+                  <p>deals in the last four years</p>
+                </li>
+                <li className="flex flex-col justify-between [&>p]:text-base [&>p]:leading-[130%] [&>p]:tracking-wide space-y-2">
+                  <p>
+                    Alternative
+                    <br />
+                    Asset Management
+                  </p>
+                  <h3 className="text-4xl text-greenlight font-light">
+                    €16.8bn+
+                  </h3>
+                  <p>in AuM</p>
+                </li>
+                <li className="flex flex-col justify-between [&>p]:text-base [&>p]:leading-[130%] [&>p]:tracking-wide space-y-2">
+                  <p>Financial Institutions Group</p>
+                  <h3 className="text-4xl text-greenlight font-light">320+</h3>
+                  <p>deals since 2019</p>
+                </li>
+              </ul>
 
               <Link
                 href={"/"}
-                className="read-more-btn flex items-center gap-5 pb-9"
+                className="read-more-btn flex items-center gap-5"
               >
                 <span>Read More</span>
                 <svg

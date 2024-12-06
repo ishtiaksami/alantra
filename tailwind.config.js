@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        FS: ["FS Joey Light", "sans-serif"],
+      },
       backgroundImage: {
         media1: "url('/img/image.jpg')",
       },
@@ -21,8 +24,11 @@ module.exports = {
         32: "2rem",
       },
       colors: {
-        primary: "var(--logo-color)",
+        logo: "var(--logo-color)",
         overlay: "var(--overlay)",
+        content: "var(--content)",
+        primary: "var(--primary)",
+        greenlight: "#5b7c2a",
       },
     },
   },
