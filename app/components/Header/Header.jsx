@@ -36,7 +36,6 @@ export default function Header() {
               </button>
               {/* Mega Menu */}
               <div
-                id="megaMenu"
                 className={`absolute left-0 mt-4 w-screen bg-white text-logo shadow-lg rounded-lg overflow-hidden transition-all duration-300 ${
                   isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                 }`}

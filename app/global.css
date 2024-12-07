@@ -38,8 +38,8 @@
 }
 
 body {
-  font-family: "FS Joey Regular" sans-serif;
-  color: #3a3a3a;
+  @apply font-FS font-light text-content;
+ 
 }
 
 .holder {
