@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Btn from "../Btn/Btn";
 
 export default function Header() {
   // State for menu visibility
@@ -19,56 +20,52 @@ export default function Header() {
                 className="toggle-menu bg-transparent cursor-pointer w-[42px] flex flex-col items-center gap-[6px]"
               >
                 <span
-                  className={`block h-[2px] w-[32px] bg-[#1a482b] rounded-full transition-transform duration-300 ${
-                    isMenuOpen ? "rotate-45 translate-y-[8px]" : ""
-                  }`}
+                  className={`block h-[2px] w-[32px] bg-primary rounded-full transition-transform duration-300 ${isMenuOpen ? "rotate-45 translate-y-[8px]" : ""
+                    }`}
                 ></span>
                 <span
-                  className={`block h-[2px] w-[32px] bg-[#1a482b] rounded-full transition-opacity duration-300 ${
-                    isMenuOpen ? "opacity-0" : ""
-                  }`}
+                  className={`block h-[2px] w-[32px] bg-primary rounded-full transition-opacity duration-300 ${isMenuOpen ? "opacity-0" : ""
+                    }`}
                 ></span>
                 <span
-                  className={`block h-[2px] w-[32px] bg-[#1a482b] rounded-full transition-transform duration-300 ${
-                    isMenuOpen ? "-rotate-45 -translate-y-[8px]" : ""
-                  }`}
+                  className={`block h-[2px] w-[32px] bg-primary rounded-full transition-transform duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-[8px]" : ""
+                    }`}
                 ></span>
               </button>
               {/* Mega Menu */}
               <div
-                className={`absolute left-0 mt-4 w-screen bg-white text-logo shadow-lg rounded-lg overflow-hidden transition-all duration-300 ${
-                  isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-                }`}
+                className={`absolute left-0 py-9 bg-[#fafafa] mt-4 w-screen text-logo shadow-lg rounded-lg overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+                  }`}
               >
                 <div className="holder">
                   <div className="grid grid-cols-3 gap-6">
-                    <ul>
+                    <ul className="pr-10 space-y-3">
                       <li>
-                        <Link href={""}>About Us</Link>
+                        <Link href={""} className="text-xl relative flex items-center nav-arrow hover:text-greenlight transition-all duration-300">About Us</Link>
                       </li>
                       <li>
-                        <Link href={""}>What We Do</Link>
+                        <Link href={""} className="text-xl relative flex items-center nav-arrow hover:text-greenlight transition-all duration-300">What We Do</Link>
                       </li>
                       <li>
-                        <Link href={""}>Team</Link>
+                        <Link href={""} className="text-xl relative flex items-center nav-arrow hover:text-greenlight transition-all duration-300">Team</Link>
                       </li>
                       <li>
-                        <Link href={""}>Careers</Link>
+                        <Link href={""} className="text-xl relative flex items-center nav-arrow hover:text-greenlight transition-all duration-300">Careers</Link>
                       </li>
                       <li>
-                        <Link href={""}>Shareholders & Investors</Link>
+                        <Link href={""} className="text-xl relative flex items-center nav-arrow hover:text-greenlight transition-all duration-300">Shareholders & Investors</Link>
                       </li>
                       <li>
-                        <Link href={""}>News & Insights</Link>
+                        <Link href={""} className="text-xl relative flex items-center nav-arrow hover:text-greenlight transition-all duration-300">News & Insights</Link>
                       </li>
                       <li>
-                        <Link href={""}>Global Presence</Link>
+                        <Link href={""} className="text-xl hover:text-greenlight transition-all duration-300">Global Presence</Link>
                       </li>
                       <li>
-                        <Link href={""}>Contact Us</Link>
+                        <Link href={""} className="text-xl hover:text-greenlight transition-all duration-300">Contact Us</Link>
                       </li>
                     </ul>
-                    <Link href={"/"} className="">
+                    <Link href={"/"} className="border-border border-solid border hover:shadow-md transition-all duration-200 bg-white">
                       <div>
                         <Image
                           src="/img/image6.jpg"
@@ -78,27 +75,27 @@ export default function Header() {
                           height={1296}
                         />
                       </div>
-                      <h4>Financial Results</h4>
-                      <h3>
-                        Alantra reports nine-month revenues of €109.5mn (-10.5%)
-                        and a net profit of €3.3mn (-24.4%)
-                      </h3>
+
+                      <div className="pt-5 pr-12 pl-5">
+                        <h4 className="h-[80px] overflow-hidden text-xl text-black">Alantra Reorganizes its Executive Team to Drive the Firm’s New Strategy</h4>
+                        <Btn />
+                      </div>
                     </Link>
-                    <Link href={"/"} className="">
+                    <Link href={"/"} className="border-border  border-solid border hover:shadow-md transition-all duration-200 bg-white">
                       <div>
                         <Image
-                          src="/img/image7.jpg"
+                          src="/img/image4.jpg"
                           alt="alantra"
                           className="size-full"
                           width={1191}
                           height={1296}
                         />
                       </div>
-                      <h4>Financial Results</h4>
-                      <h3>
-                        Alantra reports nine-month revenues of €109.5mn (-10.5%)
-                        and a net profit of €3.3mn (-24.4%)
-                      </h3>
+
+                      <div className="pt-5 pr-12 pl-5">
+                        <h4 className="h-[80px] overflow-hidden text-xl text-black">Alantra Reorganizes its Executive Team to Drive the Firm’s New Strategy</h4>
+                        <Btn />
+                      </div>
                     </Link>
                   </div>
                 </div>
